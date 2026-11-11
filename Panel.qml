@@ -8,8 +8,8 @@ import qs.Ui
 
 // Omareel in the bar. Idle: a record glyph; a click opens a menu laid out like
 // Omareel's launcher: Record (full screen) or Record a window, then the sources
-// (system audio, microphone, webcam), each with an on/off switch and, for the
-// microphone and webcam, a device picker. Choices are saved in Omareel's own
+// (system audio, microphone, camera), each with an on/off switch and, for the
+// microphone and camera, a device picker. Choices are saved in Omareel's own
 // settings, so the launcher and `omareel record` use them too.
 // Recording: the glyph turns red with the elapsed time, a click stops the
 // recording (Omareel then opens the editor), and the menu offers Stop or
@@ -96,7 +96,7 @@ Panel {
     if (expanded === "microphone")
       for (var i = 0; i < microphones.length; i++)
         list.push({ kind: "device", source: "microphone", value: microphones[i].value, label: microphones[i].text, selected: microphones[i].value === microphoneDevice })
-    list.push({ kind: "source", id: "webcam", icon: "󰄀", iconOff: "󰗟", label: "Webcam", hint: webcamName, on: webcam, menu: cameras.length > 0 })
+    list.push({ kind: "source", id: "webcam", icon: "󰄀", iconOff: "󰗟", label: "Camera", hint: webcamName, on: webcam, menu: cameras.length > 0 })
     if (expanded === "webcam")
       for (var j = 0; j < cameras.length; j++)
         list.push({ kind: "device", source: "webcam", value: cameras[j].value, label: cameras[j].text, selected: cameras[j].value === webcamDevice })
@@ -444,7 +444,7 @@ Panel {
     }
   }
 
-  // An action (Record, Open Omareel, …) or a source (System audio, Microphone, Webcam).
+  // An action (Record, Open Omareel, …) or a source (System audio, Microphone, Camera).
   Component {
     id: mainRow
     CursorSurface {

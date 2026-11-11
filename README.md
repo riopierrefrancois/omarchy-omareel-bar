@@ -2,10 +2,10 @@
 
 A record button for the Omarchy bar that drives [Omareel](https://github.com/omacom/omareel).
 
-- **Idle:** a record icon. Click it for a menu laid out like Omareel's launcher: one big **Record** button that offers **Full screen** or **Window**, then **System audio**, **Microphone** and **Webcam** switches, with pickers for the microphone and the camera, plus **Open Omareel** and **Edit last recording**.
+- **Idle:** a record icon. Click it for a menu laid out like Omareel's launcher: one big **Record** button that offers **Full screen** or **Window**, then **System audio**, **Microphone** and **Camera** switches, with pickers for the microphone and the camera, plus **Open Omareel** and **Edit last recording**.
 - **Recording:** the icon turns red with the elapsed time. Click to stop (Omareel opens the editor); the menu also offers **Discard**.
 - **Middle-click** records the full screen straight away, or stops.
-- Menu keys: R full screen, W window, A system audio, M microphone, C webcam, E edit last; arrows move, left/right open device lists, Esc goes back.
+- Menu keys: R full screen, W window, A system audio, M microphone, C camera, E edit last; arrows move, left/right open device lists, Esc goes back.
 
 Source choices are saved in Omareel's own settings (`~/.config/omareel/settings.json`), so the launcher and `omareel record` use them too.
 

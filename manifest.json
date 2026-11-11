@@ -14,7 +14,7 @@
   },
   "barWidget": {
     "displayName": "Omareel",
-    "description": "Record button with Omareel's sources: system audio, microphone and webcam with device pickers.",
+    "description": "Record button with Omareel's sources: system audio, microphone and camera with device pickers.",
     "category": "Capture",
     "allowMultiple": false,
     "defaultSection": "centerBegin"
