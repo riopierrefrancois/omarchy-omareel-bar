@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "omareel.recorder",
+  "name": "Omareel",
+  "version": "1.1.0",
+  "author": "PF",
+  "license": "MIT",
+  "description": "Record the screen or a window with Omareel from the bar, pick the microphone and camera, with a live timer.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Omareel",
+    "description": "Record button with Omareel's sources: system audio, microphone and webcam with device pickers.",
+    "category": "Capture",
+    "allowMultiple": false,
+    "defaultSection": "centerBegin"
+  }
+}
